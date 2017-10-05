@@ -60,5 +60,5 @@ int get_index(int arr[], int comeco, int fim, int valor) {
     int i = 0;
 
     while ((i<=fim) && (arr[i] != valor)) i++;
-    return i <= fim ? i : fim;
+    return i;
 }
