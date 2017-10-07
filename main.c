@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "abb.h"
 
-void make_tree(arvbin *t, int in_f, int in_i, int in[], int pos_i, int pos_f, int pos[]);
+void make_tree(arvbin *t, int in_i, int in_f, int in[], int pos_i, int pos_f, int pos[]);
 int get_index(int arr[], int comeco, int fim, int valor);
 
 int main()
