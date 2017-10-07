@@ -12,22 +12,15 @@ int main()
     int n, i;
     scanf("%d", &n);
 
-    //int emOrdem[n], posOrdem[n];
+    int emOrdem[n], posOrdem[n];
 
-    int emOrdem[] = {5,4,20,9,8,10,18,15};
-    int posOrdem[] = {4,5,9,20,18,10,15,8};
+    for (i = 0; i < n; i++)
+       scanf("%d", &emOrdem[i]);
 
-    //for (i = 0; i < n; i++)
-      //  scanf("%d", &emOrdem[i]);
+    for (i = 0; i < n; i++)
+       scanf("%d", &posOrdem[i]);
 
-    //for (i = 0; i < n; i++)
-      //  scanf("%d", &posOrdem[i]);
-
-     make_tree(&t, 0, n-1, emOrdem, 0, n-1, posOrdem);
-
-    //int indice;
-
-    //indice = get_index(emOrdem, 0, 7, 8);
+    make_tree(&t, 0, n-1, emOrdem, 0, n-1, posOrdem);
 
     pre_ordem(t);
 
@@ -41,7 +34,6 @@ void make_tree(arvbin *t, int in_i, int in_f, int in[], int pos_i, int pos_f, in
     int dado = pos[pos_f];
     tree_ins(&(*t), dado);
 
-    //tree_ins(&(*t), pos[n]);
     int indexIn = get_index(in, in_i, in_f, pos[pos_f]);
 
     // Pegando o tamanho das próximas subárvores
